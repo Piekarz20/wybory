@@ -8,12 +8,28 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 700px;
+  flex-wrap: wrap;
 }
+
 header {
   background-color: rgb(126, 25, 25);
   width: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 section {
   display: flex;
@@ -26,16 +42,18 @@ section {
   color: white;
   background-color: rgb(126, 25, 25);
   border: none;
-  border-radius: 8px;
-  width: 50px;
-  height: 25px;
-  margin: 25px;
+  border-radius: 14px;
+  width: 80px;
+  height: 50px;
+  margin: 50px;
 }
 main {
   width: 100%;
   color: rgb(126, 25, 25);
   border: 1px solid rgba(126, 25, 25, 0.2);
   box-shadow: 2px 1px 1px 1px rgb(126, 25, 25);
+  margin: 5px;
+  padding: 5px;
 }
 h1,
 h2,
@@ -45,10 +63,13 @@ h3 {
   align-items: center;
 }
 aside {
-  width: 50%;
+  width: 49%;
   color: rgb(126, 25, 25);
   border: 1px solid rgba(126, 25, 25, 0.2);
   box-shadow: 2px 1px 1px 1px rgb(126, 25, 25);
+  margin: 5px;
+  padding: 5px;
+  height: 125px;
 }
 footer {
   display: flex;
@@ -60,6 +81,39 @@ footer {
   height: 50px;
 }
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+table tr:nth-child(2n) {
+  background-color: rgb(224, 154, 154);
+}
+table * {
+  padding: 10px;
+}
+.wyniki {
+  text-align: right;
+  color: rgb(126, 25, 25);
+}
+td {
+  border: 1px solid #000;
+}
+.last {
+  font-weight: bold;
+  color: black;
+}
+.razem {
+  text-align: right;
+}
+.bd {
+  border: none;
+  box-shadow: none;
+}
+
+.zdjecia {
   display: flex;
   justify-content: center;
   align-items: center;
